@@ -16,7 +16,7 @@ export default function SummarySection() {
           <div className="grid gap-8 lg:grid-cols-2">
             <div className={`space-y-6 text-slate-300 ${isInView ? 'animate-fade-in-left stagger-2' : 'opacity-0'}`}>
               <p>
-                I'm a full-stack engineer with 8+ years building and scaling production systems. I combine frontend expertise in React and Next.js with backend development in Node.js, Python, and Go. More importantly, I understand infrastructure deeply—I design cloud architectures, orchestrate Kubernetes clusters, and automate deployments using Terraform and CI/CD pipelines.
+                I'm a full-stack engineer with 10+ years building and scaling production systems. I combine frontend expertise in React and Next.js with backend development in Node.js, Python, and Go. More importantly, I understand infrastructure deeply—I design cloud architectures, orchestrate Kubernetes clusters, and automate deployments using Terraform and CI/CD pipelines.
               </p>
               <p>
                 My work spans the entire development lifecycle: architecting scalable systems, writing performant code, managing cloud infrastructure, and ensuring operational excellence. I've led infrastructure modernization projects, mentored engineering teams, and consistently delivered systems that accelerate development workflows and maintain production stability.
