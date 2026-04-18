@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from 'react';
 
 const initialMessages = [
-  { from: 'bot', text: "Hi! I'm Marvin's AI assistant. Marvin specializes in full-stack web development, AI/ML integration, and DevOps automation. Ask about building intelligent applications, AI-powered features, or deployment pipelines." },
+  { from: 'bot', text: "Hi! I'm Marvin Amofa Marfo, a Full-Stack & DevOps Engineer with 10+ years of experience. I specialize in building scalable web applications, AI/ML integration, and cloud infrastructure. How can I help you with your project?" },
 ];
 
 const quickReplies = [
@@ -54,7 +54,7 @@ export default function ChatBotWidget() {
           messages: [
             {
               role: 'system',
-              content: "You are Marvin Amofa Marfo's AI assistant. Marvin is a results-driven Full Stack + DevOps Engineer with 10+ years building scalable production systems. He specializes in: Frontend (React, Next.js, TypeScript, Tailwind), Backend (Node.js, Python, Go, APIs), Cloud & Infrastructure (AWS, Azure, GCP, Kubernetes, Terraform), and DevOps (CI/CD, Docker, monitoring). Keep responses concise, professional, and focused on helping with full-stack development, cloud architecture, infrastructure automation, and project inquiries. Emphasize his ability to deliver complete end-to-end solutions.",
+              content: "You are Marvin Amofa Marfo, a results-driven Full Stack + DevOps Engineer with 10+ years building scalable production systems. You specialize in: Frontend (React, Next.js, TypeScript, Tailwind), Backend (Node.js, Python, Go, APIs), Cloud & Infrastructure (AWS, Azure, GCP, Kubernetes, Terraform), and DevOps (CI/CD, Docker, monitoring). You are having a direct conversation with a potential client. Keep responses concise, professional, and focused on helping with full-stack development, cloud architecture, infrastructure automation, and project inquiries. Emphasize your ability to deliver complete end-to-end solutions. Respond as Marvin himself, not as an AI assistant.",
             },
             ...messages.map((msg) => ({
               role: msg.from === 'user' ? 'user' : 'assistant',
@@ -129,8 +129,8 @@ export default function ChatBotWidget() {
           <div className="absolute inset-0 bg-gradient-to-r from-accent/0 via-white/20 to-accent/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-pulse"></div>
           <div className="relative flex w-full items-center justify-center gap-3 rounded-full bg-gradient-to-r from-slate-950 to-slate-900 px-6 py-4 text-sm font-semibold text-white transition-all duration-300 group-hover:gap-4">
             <div className="relative flex items-center">
-              <svg className="h-6 w-6 transition-all duration-300 group-hover:scale-125" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
+              <svg className="h-6 w-6 transition-all duration-300 group-hover:scale-125" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
               </svg>
               <span className="absolute -top-1 -right-1 flex h-3 w-3 rounded-full bg-accent animate-pulse"></span>
             </div>
@@ -152,8 +152,8 @@ export default function ChatBotWidget() {
                   <span className="text-xs font-bold text-white">MA</span>
                 </div>
                 <div className="flex-1">
-                  <p className="text-sm font-semibold text-white">Marvin's AI Assistant</p>
-                  <p className="text-xs text-slate-400">Powered by OpenRouter AI</p>
+                  <p className="text-sm font-semibold text-white">Marvin Amofa Marfo</p>
+                  <p className="text-xs text-slate-400">Full-Stack & DevOps Engineer</p>
                 </div>
               </div>
               <button
