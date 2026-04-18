@@ -35,16 +35,16 @@ export default function HeroSection() {
               <div className="space-y-6 text-slate-200">
                 <div>
                   <p className="text-sm uppercase tracking-[0.22em] text-slate-500">Core strengths</p>
-                  <ul className="mt-4 space-y-3 text-sm text-slate-300">
-                    <li>Full-stack web with React, Next.js, Node.js</li>
-                    <li>Cloud infrastructure & Kubernetes orchestration</li>
-                    <li>CI/CD automation & Infrastructure as Code</li>
-                  </ul>
+                  <div className="mt-4 flex flex-wrap gap-3">
+                    <span className="rounded-full bg-accent/10 px-3 py-1 text-sm text-accent border border-accent/20">Full-stack web with React, Next.js, Node.js</span>
+                    <span className="rounded-full bg-accent/10 px-3 py-1 text-sm text-accent border border-accent/20">AI/ML integration & automation</span>
+                    <span className="rounded-full bg-accent/10 px-3 py-1 text-sm text-accent border border-accent/20">CI/CD automation & Infrastructure as Code</span>
+                  </div>
                 </div>
                 <div className="grid gap-4 sm:grid-cols-2">
                   <div className="rounded-3xl bg-slate-900/80 p-5">
                     <p className="text-sm text-slate-400">Years experience</p>
-                    <p className="mt-3 text-2xl font-semibold text-white">8+</p>
+                    <p className="mt-3 text-2xl font-semibold text-white">10+ years</p>
                   </div>
                   <div className="rounded-3xl bg-slate-900/80 p-5">
                     <p className="text-sm text-slate-400">Specialties</p>

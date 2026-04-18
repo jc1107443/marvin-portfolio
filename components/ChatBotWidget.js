@@ -3,13 +3,14 @@
 import { useState, useRef, useEffect } from 'react';
 
 const initialMessages = [
-  { from: 'bot', text: "Hi! I'm Marvin's AI assistant. Marvin builds full-stack applications with robust cloud infrastructure. Ask about full-stack development, cloud architecture, DevOps practices, or project opportunities." },
+  { from: 'bot', text: "Hi! I'm Marvin's AI assistant. Marvin specializes in full-stack web development, AI/ML integration, and DevOps automation. Ask about building intelligent applications, AI-powered features, or deployment pipelines." },
 ];
 
 const quickReplies = [
-  'Project inquiry',
-  'Technical consultation',
-  'Pricing & timeline',
+  'Full-stack web development',
+  'AI/ML integration & automation',
+  'DevOps & CI/CD implementation',
+  'System architecture & design',
 ];
 
 export default function ChatBotWidget() {
@@ -53,7 +54,7 @@ export default function ChatBotWidget() {
           messages: [
             {
               role: 'system',
-              content: "You are Marvin Amofa Marfo's AI assistant. Marvin is a results-driven Full Stack + DevOps Engineer with 8+ years building scalable production systems. He specializes in: Frontend (React, Next.js, TypeScript, Tailwind), Backend (Node.js, Python, Go, APIs), Cloud & Infrastructure (AWS, Azure, GCP, Kubernetes, Terraform), and DevOps (CI/CD, Docker, monitoring). Keep responses concise, professional, and focused on helping with full-stack development, cloud architecture, infrastructure automation, and project inquiries. Emphasize his ability to deliver complete end-to-end solutions.",
+              content: "You are Marvin Amofa Marfo's AI assistant. Marvin is a results-driven Full Stack + DevOps Engineer with 10+ years building scalable production systems. He specializes in: Frontend (React, Next.js, TypeScript, Tailwind), Backend (Node.js, Python, Go, APIs), Cloud & Infrastructure (AWS, Azure, GCP, Kubernetes, Terraform), and DevOps (CI/CD, Docker, monitoring). Keep responses concise, professional, and focused on helping with full-stack development, cloud architecture, infrastructure automation, and project inquiries. Emphasize his ability to deliver complete end-to-end solutions.",
             },
             ...messages.map((msg) => ({
               role: msg.from === 'user' ? 'user' : 'assistant',
@@ -93,9 +94,26 @@ export default function ChatBotWidget() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
+      let response = '';
+      switch (reply) {
+        case 'Full-stack web development':
+          response = "Perfect! I specialize in building complete web applications with React/Next.js frontends and scalable Node.js/Python backends. What type of application are you looking to build?";
+          break;
+        case 'AI/ML integration & automation':
+          response = "Excellent! I can help integrate AI/ML capabilities into your applications, from chatbots and recommendation systems to automated data processing pipelines. What type of AI functionality are you looking to implement?";
+          break;
+        case 'DevOps & CI/CD implementation':
+          response = "Great! I can set up complete DevOps pipelines with automated testing, deployment, and monitoring using tools like GitlabCI, ArgoCD, and Prometheus. What's your current deployment process?";
+          break;
+        case 'System architecture & design':
+          response = "Great! I excel at designing scalable system architectures from microservices to monolithic applications. What type of system architecture are you looking to implement or redesign?";
+          break;
+        default:
+          response = "Great! I'd love to discuss this further. Let me connect you with more details.";
+      }
       setMessages((current) => [
         ...current,
-        { from: 'bot', text: "Great! I'd love to discuss this further. Let me connect you with more details." },
+        { from: 'bot', text: response },
       ]);
     }, 800);
   };
@@ -111,7 +129,9 @@ export default function ChatBotWidget() {
           <div className="absolute inset-0 bg-gradient-to-r from-accent/0 via-white/20 to-accent/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-pulse"></div>
           <div className="relative flex w-full items-center justify-center gap-3 rounded-full bg-gradient-to-r from-slate-950 to-slate-900 px-6 py-4 text-sm font-semibold text-white transition-all duration-300 group-hover:gap-4">
             <div className="relative flex items-center">
-              <span className="text-xl transition-all duration-300 group-hover:scale-125 group-hover:rotate-12 inline-block">💬</span>
+              <svg className="h-6 w-6 transition-all duration-300 group-hover:scale-125" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
+              </svg>
               <span className="absolute -top-1 -right-1 flex h-3 w-3 rounded-full bg-accent animate-pulse"></span>
             </div>
             <div className="flex flex-col items-start gap-0">
@@ -163,7 +183,7 @@ export default function ChatBotWidget() {
                   </div>
                 )}
 
-                <div className={`max-w-xs rounded-2xl px-4 py-3 text-sm leading-relaxed transition-all duration-300 ${
+                <div className={`max-w-full rounded-2xl px-4 py-3 text-sm leading-relaxed transition-all duration-300 ${
                   message.from === 'bot'
                     ? 'rounded-tl-none bg-slate-800/80 text-slate-200 border border-slate-700/50 shadow-md shadow-slate-900/50'
                     : 'rounded-tr-none bg-accent/25 text-slate-100 border border-accent/40 shadow-md shadow-accent/10'
@@ -198,18 +218,20 @@ export default function ChatBotWidget() {
 
           {/* Quick Replies */}
           {messages.length === initialMessages.length && (
-            <div className="border-t border-slate-800/70 px-5 py-3 space-y-2">
-              {quickReplies.map((reply) => (
-                <button
-                  key={reply}
-                  type="button"
-                  onClick={() => handleQuickReply(reply)}
-                  className="group relative w-full overflow-hidden rounded-2xl border border-slate-700/50 bg-slate-900/50 px-4 py-2.5 text-left text-xs font-medium text-slate-300 transition-all duration-300 hover:border-accent/60 hover:bg-accent/10 active:scale-95"
-                >
-                  <div className="absolute inset-0 bg-gradient-to-r from-accent/0 via-accent/10 to-accent/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  <span className="relative">{reply}</span>
-                </button>
-              ))}
+            <div className="border-t border-slate-800/70 px-5 py-3">
+              <div className="grid grid-cols-2 gap-2">
+                {quickReplies.map((reply) => (
+                  <button
+                    key={reply}
+                    type="button"
+                    onClick={() => handleQuickReply(reply)}
+                    className="group relative overflow-hidden rounded-full border border-slate-700/50 bg-slate-900/50 px-3 py-2 text-xs font-medium text-slate-300 transition-all duration-300 hover:border-accent/60 hover:bg-accent/10 active:scale-95"
+                  >
+                    <div className="absolute inset-0 bg-gradient-to-r from-accent/0 via-accent/10 to-accent/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <span className="relative">{reply}</span>
+                  </button>
+                ))}
+              </div>
             </div>
           )}
 
@@ -231,7 +253,7 @@ export default function ChatBotWidget() {
               >
                 <span className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                 <svg className="relative h-5 w-5 transition-transform duration-300 group-hover:scale-110" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
               </button>
             </div>
