@@ -2,22 +2,22 @@ import ProjectCard from '../../components/ProjectCard';
 
 const projectList = [
   {
-    title: 'Modern SaaS landing page',
+    title: 'Enterprise Fundraising Platform',
     description:
-      'Delivered a high-conversion landing page with polished visuals, responsive interactions, and fast load times for a B2B SaaS launch.',
-    tags: ['Next.js', 'Tailwind', 'UX'],
+      'Led full-stack development for enterprise-scale fundraising applications, implementing backend services, cloud infrastructure, and CI/CD pipelines.',
+    tags: ['React', 'Node.js', 'AWS', 'PostgreSQL'],
   },
   {
-    title: 'Freelancer portfolio refresh',
+    title: 'Healthcare Management System',
     description:
-      'Built a premium freelancer portfolio with streamlined messaging, case studies, and a strong visual identity for higher inquiry rates.',
-    tags: ['Brand', 'Performance', 'Design'],
+      'Developed DevOps infrastructure for healthcare applications, including CI/CD pipelines, cloud deployments, and monitoring systems.',
+    tags: ['Docker', 'Kubernetes', 'Azure', 'CI/CD'],
   },
   {
-    title: 'Conversion-first product site',
+    title: 'Global Business Applications',
     description:
-      'Created an engaging product website focused on clear value positioning, onboarding flow, and strong mobile experience.',
-    tags: ['SEO', 'Landing page', 'Speed'],
+      'Built full-stack web applications with React, Angular, and Node.js, focusing on scalable architectures and performance optimization.',
+    tags: ['React', 'Angular', 'Node.js', 'MongoDB'],
   },
 ];
 
@@ -27,9 +27,9 @@ export default function ProjectsPage() {
       <div className="mx-auto max-w-6xl space-y-10">
         <section className="rounded-[2rem] border border-slate-700/60 bg-slate-900/80 p-10 shadow-soft sm:p-12">
           <p className="text-sm font-semibold uppercase tracking-[0.24em] text-accent">Selected work</p>
-          <h1 className="mt-4 text-4xl font-semibold text-white sm:text-5xl">Portfolio projects built for real client impact.</h1>
+          <h1 className="mt-4 text-4xl font-semibold text-white sm:text-5xl">Professional software development projects and enterprise solutions.</h1>
           <p className="mt-6 max-w-3xl text-base leading-8 text-slate-300 sm:text-lg">
-            Explore curated examples of websites and landing pages that blend visual polish with fast performance and strong conversion structure.
+            Explore examples of full-stack applications, cloud infrastructure projects, and enterprise systems I've developed across various industries and technologies.
           </p>
         </section>
 

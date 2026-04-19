@@ -60,26 +60,23 @@ export default function ContactSection() {
         <div className="grid gap-10 lg:grid-cols-2 lg:items-start">
           <div className={isInView ? 'animate-fade-in-left stagger-1' : 'opacity-0'}>
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-accent">Contact</p>
-            <h2 className="mt-4 text-3xl font-semibold text-white sm:text-4xl">Ready to build enterprise-grade systems?</h2>
+            <h2 className="mt-4 text-3xl font-semibold text-white sm:text-4xl">Ready to build scalable software solutions?</h2>
             <p className="mt-6 max-w-xl text-sm leading-7 text-slate-300 sm:text-base">
-              Let's discuss your full-stack and infrastructure needs. I deliver complete solutions from frontend UI to cloud architecture, with proven DevOps practices and operational excellence.
+              Ready to discuss your software development and cloud infrastructure needs? I deliver comprehensive solutions from responsive frontends to scalable backends and automated deployment pipelines.
             </p>
 
-            {/* Contact Info */}
-            <div className="mt-8 space-y-4">
               <div>
                 <p className="text-xs uppercase tracking-[0.24em] text-slate-500">Email</p>
-                <p className="mt-1 text-sm text-slate-300">zakobu4k@gmail.com</p>
+                <p className="mt-1 text-sm text-slate-300">marvinamofa@hotmail.com</p>
               </div>
               <div>
                 <p className="text-xs uppercase tracking-[0.24em] text-slate-500">Phone</p>
                 <p className="mt-1 text-sm text-slate-300">+44 7466 983561</p>
               </div>
               <div>
-                <p className="text-xs uppercase tracking-[0.24em] text-slate-500">Expertise</p>
-                <p className="mt-1 text-sm text-slate-300">Full-stack development, cloud infrastructure, Kubernetes, DevOps automation.</p>
+                <p className="text-xs uppercase tracking-[0.24em] text-slate-500">Location</p>
+                <p className="mt-1 text-sm text-slate-300">Manchester, UK</p>
               </div>
-            </div>
           </div>
 
           {/* Contact Form */}

@@ -4,29 +4,29 @@ export default function ServicesPage() {
       <div className="mx-auto max-w-6xl space-y-12">
         <section className="rounded-[2rem] border border-slate-700/60 bg-slate-900/80 p-10 shadow-soft sm:p-12">
           <p className="text-sm font-semibold uppercase tracking-[0.24em] text-accent">Services</p>
-          <h1 className="mt-4 text-4xl font-semibold text-white sm:text-5xl">High-end web services for modern freelancers and businesses.</h1>
+          <h1 className="mt-4 text-4xl font-semibold text-white sm:text-5xl">Professional software development services for enterprise and business needs.</h1>
           <p className="mt-6 max-w-3xl text-base leading-8 text-slate-300 sm:text-lg">
-            I offer complete website design and development services for clients who need performance, strong branding, and a professional digital presence.
+            I offer comprehensive software engineering services, from full-stack web development to cloud infrastructure and DevOps automation. My solutions are built for scalability, performance, and long-term maintainability.
           </p>
         </section>
 
         <section className="grid gap-6 lg:grid-cols-3">
           <div className="rounded-[1.75rem] border border-slate-700/70 bg-slate-950/90 p-8 shadow-soft">
-            <h2 className="text-xl font-semibold text-white">Custom websites</h2>
+            <h2 className="text-xl font-semibold text-white">Full-stack development</h2>
             <p className="mt-4 text-sm leading-7 text-slate-300">
-              Tailored Next.js websites for landing pages, agency sites, portfolios, and business platforms.
+              Complete web applications using React, Next.js, Node.js, and Python with scalable backend APIs and optimized databases.
             </p>
           </div>
           <div className="rounded-[1.75rem] border border-slate-700/70 bg-slate-950/90 p-8 shadow-soft">
-            <h2 className="text-xl font-semibold text-white">Visual branding</h2>
+            <h2 className="text-xl font-semibold text-white">Cloud & DevOps</h2>
             <p className="mt-4 text-sm leading-7 text-slate-300">
-              Modern visual systems, typographic direction, and polished UI patterns that align with your brand.
+              Cloud-native deployments on AWS/Azure with CI/CD pipelines, containerization, and infrastructure automation.
             </p>
           </div>
           <div className="rounded-[1.75rem] border border-slate-700/70 bg-slate-950/90 p-8 shadow-soft">
-            <h2 className="text-xl font-semibold text-white">Performance & SEO</h2>
+            <h2 className="text-xl font-semibold text-white">AI integration</h2>
             <p className="mt-4 text-sm leading-7 text-slate-300">
-              Optimized page structure, metadata, and fast loading with Next.js performance features.
+              Integration of AI/ML capabilities using OpenAI API, machine learning models, and automated workflows.
             </p>
           </div>
         </section>
@@ -34,23 +34,23 @@ export default function ServicesPage() {
         <section className="rounded-[2rem] border border-slate-700/60 bg-slate-900/80 p-10 shadow-soft sm:p-12">
           <div className="grid gap-8 lg:grid-cols-2">
             <div>
-              <h2 className="text-3xl font-semibold text-white">Engagement-driven development</h2>
+              <h2 className="text-3xl font-semibold text-white">Quality-driven development with enterprise standards</h2>
               <p className="mt-4 text-sm leading-7 text-slate-300">
-                I build pages with clear user journeys, strong calls to action, and a polished aesthetic so your site feels premium from the first interaction.
+                I build applications with strong architectural foundations, comprehensive testing, and production-ready deployment practices. Every solution is designed for maintainability, scalability, and operational excellence.
               </p>
             </div>
             <div className="space-y-6">
               <div className="rounded-3xl bg-slate-950/90 p-6">
-                <h3 className="font-semibold text-white">Next.js App Router</h3>
-                <p className="mt-3 text-slate-300">Automatic route splitting, server-side rendering, and great developer tooling.</p>
+                <h3 className="font-semibold text-white">React & Next.js</h3>
+                <p className="mt-3 text-slate-300">Modern frontend frameworks for scalable, performant web applications.</p>
               </div>
               <div className="rounded-3xl bg-slate-950/90 p-6">
-                <h3 className="font-semibold text-white">Tailwind CSS</h3>
-                <p className="mt-3 text-slate-300">Clean utility styling for responsive layouts and fast visual iteration.</p>
+                <h3 className="font-semibold text-white">Node.js & Python</h3>
+                <p className="mt-3 text-slate-300">Backend technologies for robust APIs and server-side logic.</p>
               </div>
               <div className="rounded-3xl bg-slate-950/90 p-6">
-                <h3 className="font-semibold text-white">Conversion-focused design</h3>
-                <p className="mt-3 text-slate-300">Landing pages and service pages built to generate inquiries and close clients.</p>
+                <h3 className="font-semibold text-white">AWS & Azure</h3>
+                <p className="mt-3 text-slate-300">Cloud platforms for scalable, secure, and cost-effective infrastructure.</p>
               </div>
             </div>
           </div>

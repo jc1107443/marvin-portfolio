@@ -1,4 +1,4 @@
-export default function ProjectCard({ title, description, tags, isVisible = false, delay = 0 }) {
+export default function ProjectCard({ title, description, tags, duration, impact, isVisible = false, delay = 0 }) {
   const staggerClass = `stagger-${Math.min(delay + 2, 8)}`;
 
   return (
@@ -8,7 +8,16 @@ export default function ProjectCard({ title, description, tags, isVisible = fals
       <div className="absolute inset-0 rounded-[1.75rem] bg-gradient-to-br from-accent/0 via-accent/5 to-accent/0 opacity-0 group-hover:opacity-100 group-active:opacity-50 transition-all duration-300"></div>
       <div className="relative z-10">
         <h3 className="text-xl font-semibold text-white transition-all duration-300 group-hover:text-accent group-active:scale-95 origin-left">{title}</h3>
+        {duration && (
+          <p className="mt-2 text-xs uppercase tracking-[0.18em] text-slate-500 font-medium">{duration}</p>
+        )}
         <p className="mt-4 text-sm leading-7 text-slate-300 transition-all duration-300 group-hover:text-slate-200 group-active:text-slate-300">{description}</p>
+        {impact && (
+          <div className="mt-4 p-3 rounded-lg bg-accent/10 border border-accent/20">
+            <p className="text-xs font-semibold text-accent uppercase tracking-[0.15em]">Impact</p>
+            <p className="mt-1 text-sm text-slate-200">{impact}</p>
+          </div>
+        )}
         <div className="mt-6 flex flex-wrap gap-2 text-xs uppercase tracking-[0.18em] text-slate-400">
           {tags.map((tag) => (
             <span key={tag} className="rounded-full bg-slate-800 px-3 py-1 transition-all duration-300 group-hover:bg-accent/20 group-hover:text-accent group-active:bg-accent/40 group-active:text-white transform origin-center">

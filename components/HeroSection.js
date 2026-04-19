@@ -13,13 +13,13 @@ export default function HeroSection() {
           <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
             <div className="space-y-8">
               <p className={`inline-flex rounded-full border border-accent/20 bg-accent/10 px-4 py-2 text-sm font-semibold uppercase tracking-[0.24em] text-accent ${isInView ? 'animate-fade-in-up stagger-1' : 'opacity-0'}`}>
-                Full Stack + DevOps Engineer
+                Senior Software Engineer
               </p>
               <h1 className={`text-4xl font-semibold tracking-tight text-white sm:text-5xl ${isInView ? 'animate-fade-in-up stagger-2' : 'opacity-0'}`}>
-                Full-stack applications backed by robust cloud infrastructure and automation.
+                Designing and deploying scalable web applications and cloud-native platforms.
               </h1>
               <p className={`max-w-xl text-base leading-8 text-slate-300 sm:text-lg ${isInView ? 'animate-fade-in-up stagger-3' : 'opacity-0'}`}>
-                I build end-to-end platforms combining frontend excellence, scalable APIs, and enterprise-grade infrastructure. From React and Next.js to Kubernetes and Terraform—I deliver complete, production-ready systems.
+                With 9+ years of experience, I specialize in full-stack development using React, Next.js, Node.js, and Python, combined with AWS/Azure cloud environments and CI/CD automation. I deliver end-to-end solutions from responsive frontends to secure backends and highly available infrastructure.
               </p>
               <div className={`flex flex-col gap-4 sm:flex-row ${isInView ? 'animate-fade-in-up stagger-4' : 'opacity-0'}`}>
                 <Link href="#contact" className="group relative inline-flex items-center justify-center rounded-full bg-accent px-6 py-3 text-sm font-semibold text-slate-950 transition-all duration-300 hover:bg-sky-400 hover:shadow-xl hover:shadow-accent/50 active:scale-95 overflow-hidden">
@@ -36,19 +36,19 @@ export default function HeroSection() {
                 <div>
                   <p className="text-sm uppercase tracking-[0.22em] text-slate-500">Core strengths</p>
                   <div className="mt-4 flex flex-wrap gap-3">
-                    <span className="rounded-full bg-accent/10 px-3 py-1 text-sm text-accent border border-accent/20">Full-stack web with React, Next.js, Node.js</span>
-                    <span className="rounded-full bg-accent/10 px-3 py-1 text-sm text-accent border border-accent/20">AI/ML integration & automation</span>
-                    <span className="rounded-full bg-accent/10 px-3 py-1 text-sm text-accent border border-accent/20">CI/CD automation & Infrastructure as Code</span>
+                    <span className="rounded-full bg-accent/10 px-3 py-1 text-sm text-accent border border-accent/20">Full-stack web development</span>
+                    <span className="rounded-full bg-accent/10 px-3 py-1 text-sm text-accent border border-accent/20">Cloud-native platforms</span>
+                    <span className="rounded-full bg-accent/10 px-3 py-1 text-sm text-accent border border-accent/20">AI/ML integration</span>
                   </div>
                 </div>
                 <div className="grid gap-4 sm:grid-cols-2">
                   <div className="rounded-3xl bg-slate-900/80 p-5">
                     <p className="text-sm text-slate-400">Years experience</p>
-                    <p className="mt-3 text-2xl font-semibold text-white">10+ years</p>
+                    <p className="mt-3 text-2xl font-semibold text-white">9+ years</p>
                   </div>
                   <div className="rounded-3xl bg-slate-900/80 p-5">
                     <p className="text-sm text-slate-400">Specialties</p>
-                    <p className="mt-3 text-2xl font-semibold text-white">Full Stack + Ops</p>
+                    <p className="mt-3 text-2xl font-semibold text-white">Full Stack + Cloud</p>
                   </div>
                 </div>
               </div>

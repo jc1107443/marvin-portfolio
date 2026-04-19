@@ -4,9 +4,9 @@ export default function ContactPage() {
       <div className="mx-auto max-w-6xl space-y-10">
         <section className="rounded-[2rem] border border-slate-700/60 bg-slate-900/80 p-10 shadow-soft sm:p-12">
           <p className="text-sm font-semibold uppercase tracking-[0.24em] text-accent">Contact</p>
-          <h1 className="mt-4 text-4xl font-semibold text-white sm:text-5xl">Start your next project with a freelance professional.</h1>
+          <h1 className="mt-4 text-4xl font-semibold text-white sm:text-5xl">Let's discuss your software development project.</h1>
           <p className="mt-6 max-w-3xl text-base leading-8 text-slate-300 sm:text-lg">
-            Share your project details and I’ll respond with a tailored proposal, timeline, and recommendations for a successful launch.
+            Whether you need full-stack development, cloud infrastructure, or DevOps automation, I'm ready to help bring your technical vision to life. Share your requirements and let's build something exceptional.
           </p>
         </section>
 
@@ -15,15 +15,15 @@ export default function ContactPage() {
             <div className="space-y-6 text-slate-200">
               <div>
                 <p className="text-xs uppercase tracking-[0.24em] text-slate-500">Email</p>
-                <p className="mt-2 text-sm">hello@marvin.dev</p>
+                <p className="mt-2 text-sm">marvinamofa@hotmail.com</p>
               </div>
               <div>
-                <p className="text-xs uppercase tracking-[0.24em] text-slate-500">Upwork</p>
-                <p className="mt-2 text-sm">upwork.com/freelancers/marvin</p>
+                <p className="text-xs uppercase tracking-[0.24em] text-slate-500">Phone</p>
+                <p className="mt-2 text-sm">+44 7466 983561</p>
               </div>
               <div>
-                <p className="text-xs uppercase tracking-[0.24em] text-slate-500">Availability</p>
-                <p className="mt-2 text-sm">Open for new projects</p>
+                <p className="text-xs uppercase tracking-[0.24em] text-slate-500">Location</p>
+                <p className="mt-2 text-sm">Manchester, UK</p>
               </div>
             </div>
           </div>

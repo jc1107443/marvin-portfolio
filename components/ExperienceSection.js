@@ -3,12 +3,12 @@
 import { useInViewAnimation } from '@/hooks/useInViewAnimation';
 
 const skills = [
-  'Frontend: React, Next.js, TypeScript, Tailwind CSS',
-  'Backend: Node.js, Python, Go, Express, APIs',
-  'Databases: PostgreSQL, MongoDB, RDS, DynamoDB',
-  'Cloud & Infrastructure: AWS, Azure, GCP, Kubernetes, Terraform',
-  'DevOps: CI/CD, Docker, Kubernetes, ArgoCD, GitlabCI',
-  'Observability: Prometheus, Grafana, CloudWatch, ELK, NewRelic',
+  'Frontend: React.js, Next.js, Angular, TypeScript, Tailwind CSS, SEO',
+  'Backend: Node.js, Express.js, FastAPI, REST APIs, GraphQL, JWT/OAuth',
+  'Databases: PostgreSQL, MongoDB, MySQL, Redis, Query Optimization',
+  'DevOps & Cloud: Docker, CI/CD, AWS EC2/S3/Lambda/RDS, Azure, Kubernetes',
+  'AI & ML: OpenAI API, Prompt Engineering, NLP, Model Integration',
+  'Tools: Git, GitHub, Postman, Agile/Scrum, System Design, Testing',
 ];
 
 export default function ExperienceSection() {
@@ -22,7 +22,7 @@ export default function ExperienceSection() {
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-accent">Core skills</p>
             <h2 className="mt-4 text-3xl font-semibold text-white sm:text-4xl">Full-stack and infrastructure expertise across the entire stack.</h2>
             <p className="mt-6 max-w-xl text-sm leading-7 text-slate-300 sm:text-base">
-              I deliver end-to-end solutions: polished frontend interfaces, scalable backend systems, robust infrastructure, and proven DevOps practices. Every layer is designed for reliability, performance, and operational excellence.
+              I deliver comprehensive solutions across the full technology stack: from responsive, accessible frontends to scalable backend systems, optimized databases, and automated cloud infrastructure. Every component is built with performance, security, and maintainability in mind.
             </p>
           </div>
           <div className="grid gap-4">
