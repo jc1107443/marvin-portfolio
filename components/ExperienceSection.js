@@ -15,7 +15,7 @@ export default function ExperienceSection() {
   const { ref, isInView } = useInViewAnimation();
 
   return (
-    <section className="bg-slate-950/95 px-6 py-20 sm:px-10 lg:px-20" ref={ref}>
+    <section className="px-6 py-20 sm:px-10 lg:px-20" ref={ref}>
       <div className="mx-auto max-w-6xl rounded-[2rem] border border-slate-700/60 bg-slate-900/80 p-10 shadow-soft sm:p-12">
         <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
           <div className={isInView ? 'animate-fade-in-left stagger-1' : 'opacity-0'}>
