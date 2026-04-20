@@ -75,7 +75,7 @@ export default function ContactSection() {
               </div>
               <div>
                 <p className="text-xs uppercase tracking-[0.24em] text-slate-500">Location</p>
-                <p className="mt-1 text-sm text-slate-300">Manchester, UK</p>
+                <p className="mt-1 text-sm text-slate-300">Manchester, England, United Kingdom</p>
               </div>
           </div>
 

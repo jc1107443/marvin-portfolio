@@ -23,7 +23,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <p className="text-xs uppercase tracking-[0.24em] text-slate-500">Location</p>
-                <p className="mt-2 text-sm">Manchester, UK</p>
+                <p className="mt-2 text-sm">Manchester, England, United Kingdom</p>
               </div>
             </div>
           </div>
