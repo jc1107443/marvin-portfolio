@@ -30,18 +30,18 @@ export default function Web3Background() {
 
     // Create particles/nodes
     const particles = [];
-    const particleCount = 50;
+    const particleCount = 100;
 
     class Particle {
       constructor() {
         this.x = Math.random() * canvas.width;
         this.y = Math.random() * canvas.height;
-        this.baseVx = (Math.random() - 0.5) * 0.5;
-        this.baseVy = (Math.random() - 0.5) * 0.5;
+        this.baseVx = (Math.random() - 0.5) * 1;
+        this.baseVy = (Math.random() - 0.5) * 1;
         this.vx = this.baseVx;
         this.vy = this.baseVy;
-        this.radius = Math.random() * 1.5 + 0.5;
-        this.opacity = Math.random() * 0.5 + 0.3;
+        this.radius = Math.random() * 2 + 1;
+        this.opacity = Math.random() * 0.6 + 0.4;
       }
 
       update(scrollMultiplier) {
@@ -75,8 +75,8 @@ export default function Web3Background() {
       }
 
       draw(ctx) {
-        ctx.fillStyle = `rgba(139, 92, 246, ${this.opacity})`;
-        ctx.shadowColor = `rgba(139, 92, 246, ${this.opacity * 0.8})`;
+        ctx.fillStyle = `rgba(255, 255, 255, ${this.opacity})`;
+        ctx.shadowColor = `rgba(255, 255, 255, ${this.opacity * 0.8})`;
         ctx.shadowBlur = 15;
         ctx.shadowOffsetX = 0;
         ctx.shadowOffsetY = 0;
@@ -139,8 +139,8 @@ export default function Web3Background() {
           const connectionRange = 200 + scrollMultiplier * 50;
           
           if (distance < connectionRange) {
-            const opacity = (1 - distance / connectionRange) * (0.25 + scrollMultiplier * 0.15);
-            ctx.strokeStyle = `rgba(139, 92, 246, ${opacity})`;
+            const opacity = (1 - distance / connectionRange) * (0.3 + scrollMultiplier * 0.2);
+            ctx.strokeStyle = `rgba(255, 255, 255, ${opacity})`;
             ctx.lineWidth = 0.5 + scrollMultiplier * 0.2;
             ctx.beginPath();
             ctx.moveTo(particles[i].x, particles[i].y);
